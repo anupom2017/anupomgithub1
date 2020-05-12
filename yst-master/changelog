@@ -1,0 +1,117 @@
+yst 0.7.1 (released 25 Nov 2019)
+
+  * Fixes to work with pandoc 2.8.
+  * Add cabal.project and GitHub actions ci.
+
+yst 0.7.0.1 (released 27 Feb 2019)
+
+  * Support recent pandoc versions.
+  * Demo - remove HTML calling nav.js.
+
+yst 0.7 (released 07 Mar 2018)
+
+  * Added NavStyle type.
+  * Added navstyle field to Site.
+  * Added navstyle parameter to config.yaml (values `top` or `side`).
+    This controls the CSS used for the menu.  Top is default as
+    before.
+  * Removed old js/nav.js and css/hk-pyg.css from the demo site.
+
+yst 0.6.0.1 (released 20 Feb 2018)
+
+  * Update to work with pandoc 2.1.
+
+yst 0.6 (released 29 Oct 2017)
+
+  * Update to work with (and require) pandoc 2.0.
+
+yst 0.5.1.2 (released 19 Sep 2017)
+
+  * Update demo style to use Bootstrap's navbar instead of tree
+    (Jacob Mitchell).
+  * Remove unused code in nav menu rendering (Jacob Mitchell).
+  * Fix some warnings (Jacob Mitchell).
+  * Make `$nav$` compatible with Bootstrap (Jacob Mitchell).
+  * Fixed typo (#45).
+  * Allow latest aeson.
+  * Allow pandoc 1.19.x.
+
+yst 0.5.1.1 (released 22 Mar 2016)
+
+  * Allow pandoc 1.17, aeson 0.11.
+  * Prefix `js/nav` file with `$root$` for nested paths (Cody Reichert).
+
+yst 0.5.1 (released 02 Jan 2015)
+
+  * Allow building with pandoc 1.16.x.
+
+yst 0.5.0.4 (released 01 Jul 2015)
+
+  * Allow building with pandoc 1.15.x.
+
+yst 0.5.0.3 (released 02 Jun 2015)
+
+  * Updated to use pandoc 1.14, aeson 0.9, time 0.5.
+  * Use HTML5 in rendering pandoc.
+  * Added code to default css to collapse menu at "small" size.
+
+yst 0.5.0.2 (released 14 Mar 2015)
+
+  * Improved menus, using unfolding tree instead of pop-ups.
+  * Transparent background on menu.
+
+yst 0.5.0.1 (released 13 Mar 2015)
+
+  * Minor menu formatting tweaks.
+  * Use sitetitle for default header.
+
+yst 0.5 (released 13 Mar 2015)
+
+  * Use Bootstrap 3 instead of YUI CSS framework.
+  * Use lucid instead of xhtml to generate menu.
+
+yst 0.4.1.1 (released 29 Sep 2014)
+
+  * Allow compilation with latest aeson, pandoc.
+
+yst 0.4.1 (released 30 May 2014)
+
+  * Fix rendering of integers in YAML when compiled against
+    recent versions of aeson.
+  * Added HAS to WHERE condition in queries (Ohad Kammar).
+
+yst 0.4.0.1 (released 15 Sep 2013)
+
+  * Removed unneeded build-depends.
+
+yst 0.4 (released 15 Sep 2013)
+
+  * Use yaml package instead of HsSyck.
+  * Data.Yaml no longer exports nodeToYamlNode.  (We use ToJSON
+    and FromJSON instances instead.)
+
+yst 0.3.1.2 (released 15 Sep 2013)
+
+  * Updated to compile with pandoc 1.12.
+
+yst 0.3.1.1 (released 08 Mar 2013)
+
+  * Updated to compile with pandoc 1.11.
+
+yst 0.3.1 (released 19 Jan 2013)
+
+  * Updated to compile with pandoc 1.10, directory 1.2.
+
+yst 0.3.0.1 (released 23 Oct 2012)
+
+  * Allow compilation with latest HStringTemplate.
+
+  * Fixed deprecated uses of Prelude's `catch`.
+
+yst 0.3 (released 20 Oct 2012)
+
+  * Added support for loading data from Sqlite3 databases.
+    (Sigurd Meldgaard)
+
+  * Allow `sourcedir`, `datadir`, `filesdir` to specify a list
+    of directories, searched in order. (Christopher League)
